@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  box-sizing: border-box;
+  touch-action: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+}
